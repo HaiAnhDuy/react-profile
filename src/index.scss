@@ -1,11 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Crimson+Text:ital,wght@0,400;0,600;1,400;1,600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
+  font-family: "Crimson Text", "Cormorant Garamond", Georgia, serif;
+  line-height: 1.6;
   font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color-scheme: light;
+  color: #2c2c2c;
+  background-color: #fafafa;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -13,21 +15,30 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Renaissance-inspired serif font classes */
+.font-serif {
+  font-family: "Playfair Display", "Cormorant Garamond", Georgia, serif;
+}
+
+.font-body {
+  font-family: "Crimson Text", "Cormorant Garamond", Georgia, serif;
+}
+
 a {
   font-weight: 500;
-  color: #646cff;
+  color: #1a1a1a;
   text-decoration: inherit;
+  transition: color 0.3s ease;
 }
 a:hover {
-  color: #535bf2;
+  color: #4a4a4a;
 }
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background: linear-gradient(135deg, #ffffff 0%, #f8f8f8 100%);
 }
 
 h1 {
@@ -52,6 +63,304 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* Renaissance-inspired animations */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes float-slow {
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(2deg);
+  }
+}
+
+@keyframes float-medium {
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-15px) rotate(-2deg);
+  }
+}
+
+@keyframes float-slow-reverse {
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(20px) rotate(-1deg);
+  }
+}
+
+@keyframes float-medium-reverse {
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(15px) rotate(1deg);
+  }
+}
+
+@keyframes gentle-drift {
+  0%,
+  100% {
+    transform: translateX(0px) translateY(0px) rotate(0deg);
+  }
+  33% {
+    transform: translateX(10px) translateY(-8px) rotate(1deg);
+  }
+  66% {
+    transform: translateX(-8px) translateY(12px) rotate(-1deg);
+  }
+}
+
+@keyframes subtle-pulse {
+  0%,
+  100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(1.02);
+  }
+}
+
+@keyframes memory-fade {
+  0%,
+  100% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+.float-animation {
+  animation: float 3s ease-in-out infinite;
+}
+
+.float-slow {
+  animation: float-slow 8s ease-in-out infinite;
+}
+
+.float-medium {
+  animation: float-medium 6s ease-in-out infinite;
+}
+
+.float-slow-reverse {
+  animation: float-slow-reverse 9s ease-in-out infinite;
+}
+
+.float-medium-reverse {
+  animation: float-medium-reverse 7s ease-in-out infinite;
+}
+
+.gentle-drift {
+  animation: gentle-drift 12s ease-in-out infinite;
+}
+
+.subtle-pulse {
+  animation: subtle-pulse 4s ease-in-out infinite;
+}
+
+.memory-fade {
+  animation: memory-fade 10s ease-in-out infinite;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.shimmer-effect {
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite;
+}
+
+/* Enhanced canvas texture with more sophisticated pattern */
+.canvas-texture {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: radial-gradient(
+        circle at 25% 25%,
+        rgba(0, 0, 0, 0.02) 1px,
+        transparent 1px
+      ),
+      radial-gradient(
+        circle at 75% 75%,
+        rgba(0, 0, 0, 0.015) 1px,
+        transparent 1px
+      ),
+      radial-gradient(
+        circle at 50% 50%,
+        rgba(0, 0, 0, 0.01) 0.5px,
+        transparent 0.5px
+      );
+    background-size: 40px 40px, 60px 60px, 20px 20px;
+    background-position: 0 0, 30px 30px, 10px 10px;
+    opacity: 0.8;
+    pointer-events: none;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+      45deg,
+      transparent 48%,
+      rgba(0, 0, 0, 0.005) 49%,
+      rgba(0, 0, 0, 0.005) 51%,
+      transparent 52%
+    );
+    background-size: 80px 80px;
+    pointer-events: none;
+  }
+}
+
+/* Vintage paper effect for art elements */
+.vintage-paper {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(
+      45deg,
+      rgba(139, 119, 101, 0.1) 0%,
+      rgba(160, 142, 124, 0.05) 25%,
+      rgba(139, 119, 101, 0.08) 50%,
+      rgba(160, 142, 124, 0.03) 75%,
+      rgba(139, 119, 101, 0.1) 100%
+    );
+    border-radius: 3px;
+    opacity: 0.3;
+    pointer-events: none;
+  }
+}
+
+/* Enhanced museum frame with classical details */
+.museum-frame {
+  position: relative;
+  border: 3px solid rgba(0, 0, 0, 0.8);
+  border-radius: 8px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    right: -6px;
+    bottom: -6px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 12px;
+    background: linear-gradient(
+      135deg,
+      rgba(240, 240, 240, 0.1) 0%,
+      rgba(200, 200, 200, 0.05) 50%,
+      rgba(160, 160, 160, 0.1) 100%
+    );
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    right: -3px;
+    bottom: -3px;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    background: linear-gradient(
+      45deg,
+      transparent 0%,
+      rgba(255, 255, 255, 0.05) 25%,
+      transparent 50%,
+      rgba(255, 255, 255, 0.03) 75%,
+      transparent 100%
+    );
+  }
+}
+
+/* Classical ornamental corners */
+.ornamental-corners {
+  position: relative;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+  }
+
+  &::before {
+    top: -2px;
+    left: -2px;
+    border-right: none;
+    border-bottom: none;
+    border-radius: 8px 0 0 0;
+  }
+
+  &::after {
+    bottom: -2px;
+    right: -2px;
+    border-left: none;
+    border-top: none;
+    border-radius: 0 0 8px 0;
+  }
 }
 
 @media (prefers-color-scheme: light) {
