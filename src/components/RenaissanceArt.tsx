@@ -66,7 +66,7 @@ const RenaissanceArt = () => {
       {/* Mona Lisa Silhouette */}
       <div className="absolute top-20 left-10 w-32 h-48 opacity-50 transform rotate-12 float-slow">
         <img
-          src="/images/PIC1.jpg"
+          src="/react-profile/images/PIC1.jpg"
           alt="Mona Lisa Silhouette"
           className="w-full h-full"
         />
@@ -75,7 +75,7 @@ const RenaissanceArt = () => {
       {/* The Creation of Adam Hands */}
       <div className="absolute top-32 right-0 w-40 h-24 opacity-50 transform -rotate-6 float-medium">
         <img
-          src="/images/PIC2.jpg"
+          src="/react-profile/images/PIC2.jpg"
           alt="Mona Lisa Silhouette"
           className="w-full h-full"
         />
@@ -84,7 +84,7 @@ const RenaissanceArt = () => {
       {/* The Birth of Venus Silhouette */}
       <div className="absolute bottom-0 left-20 w-48 h-32 opacity-50 transform rotate-6 float-slow-reverse">
         <img
-          src="/images/PIC3.jpg"
+          src="/react-profile/images/PIC3.jpg"
           alt="Mona Lisa Silhouette"
           className="w-full h-full"
         />
@@ -93,7 +93,7 @@ const RenaissanceArt = () => {
       {/* The Last Supper Table */}
       <div className="absolute bottom-32 right-24 w-56 h-20 opacity-50 transform -rotate-3 float-medium-reverse">
         <img
-          src="/images/PIC4.jpg"
+          src="/react-profile/images/PIC4.jpg"
           alt="Mona Lisa Silhouette"
           className="w-full h-full"
         />
@@ -102,7 +102,7 @@ const RenaissanceArt = () => {
       {/* Vitruvian Man */}
       <div className="absolute top-1/2 left-8 w-32 h-32 opacity-50 transform rotate-45 float-slow">
         <img
-          src="/images/PIC5.jpg"
+          src="/react-profile/images/PIC5.jpg"
           alt="Mona Lisa Silhouette"
           className="w-full h-full"
         />
@@ -111,7 +111,7 @@ const RenaissanceArt = () => {
       {/* The School of Athens Architecture */}
       <div className="absolute top-1/3 right-8 w-44 h-28 opacity-50 transform -rotate-12 float-medium">
         <img
-          src="/images/PIC6.jpg"
+          src="/react-profile/images/PIC6.jpg"
           alt="Mona Lisa Silhouette"
           className="w-full h-full"
         />
@@ -123,7 +123,7 @@ const RenaissanceArt = () => {
         style={{ animationDelay: "1.5s" }}
       >
         <img
-          src="/images/PIC8.jpg"
+          src="/react-profile/images/PIC8.jpg"
           alt="Mona Lisa Silhouette"
           className="w-full h-full"
         />
@@ -135,7 +135,7 @@ const RenaissanceArt = () => {
         style={{ animationDelay: "3s" }}
       >
         <img
-          src="/images/PIC9.jpg"
+          src="/react-profile/images/PIC9.jpg"
           alt="Mona Lisa Silhouette"
           className="w-full h-full"
         />
@@ -147,7 +147,7 @@ const RenaissanceArt = () => {
         style={{ animationDelay: "4s" }}
       >
         <img
-          src="/images/PIC10.jpg"
+          src="/react-profile/images/PIC10.jpg"
           alt="Mona Lisa Silhouette"
           className="w-full h-full"
         />
@@ -159,7 +159,7 @@ const RenaissanceArt = () => {
         style={{ animationDelay: "2.5s" }}
       >
         <img
-          src="/images/PIC11.jpg"
+          src="/react-profile/images/PIC11.jpg"
           alt="Mona Lisa Silhouette"
           className="w-full h-full"
         />
@@ -171,7 +171,7 @@ const RenaissanceArt = () => {
         style={{ animationDelay: "1s" }}
       >
         <img
-          src="/images/PIC12.jpg"
+          src="/react-profile/images/PIC12.jpg"
           alt="Mona Lisa Silhouette"
           className="w-full h-full"
         />
@@ -183,7 +183,7 @@ const RenaissanceArt = () => {
         style={{ animationDelay: "4.5s" }}
       >
         <img
-          src="/images/PIC13.jpg"
+          src="/react-profile/images/PIC13.jpg"
           alt="Mona Lisa Silhouette"
           className="w-full h-full"
         />

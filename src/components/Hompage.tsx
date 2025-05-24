@@ -132,7 +132,7 @@ const HomeSection = ({}: {
 
             <div
               style={{
-                backgroundImage: 'url("/images/avatar.png")',
+                backgroundImage: 'url("/react-profile/images/avatar.png")',
                 backgroundSize: "cover",
                 backgroundPosition: "center 0%",
                 backgroundRepeat: "no-repeat",
