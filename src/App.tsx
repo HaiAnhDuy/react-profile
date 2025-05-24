@@ -1,6 +1,3 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import { ToastContainer } from "react-toastify";
 import AppRoutes from "./routers/Approutes";
 import "./App.css";
