@@ -15,8 +15,7 @@ const About = () => {
           <h2 className="text-5xl font-serif text-black mb-6">About Me</h2>
           <div className="w-32 h-1 bg-gradient-to-r from-gray-700 to-black mx-auto mb-8"></div>
           <p className="text-xl text-gray-700 italic max-w-3xl mx-auto leading-relaxed">
-            "Like Renaissance artists, I believe that technology and art can
-            combine to create timeless masterpieces"
+            "Here are some things about me."
           </p>
         </div>
         <div className="max-w-6xl mx-auto">
